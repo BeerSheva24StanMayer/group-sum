@@ -3,8 +3,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Random;
 import java.util.stream.Stream;
-
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 public class GroupSumTest {
@@ -29,7 +27,6 @@ public class GroupSumTest {
             runFunctionalTest(new ThreadsGroupSum(groups));
         }
         @Test
-        @Disabled
         void performanceThreadsGroupSumTest(){
             runPerformanceTest(new ThreadsGroupSum(groupsPerformance));
         }
